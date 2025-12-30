@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow Cafe - Masa Rezervasyonu</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+        }
+        header {
+            background-color: #1c1c1c;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #840404;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #840404;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .reservation-container {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .reservation-container h2 {
+            font-size: 2em;
+            color: #840404; /* "Masa Rezervasyonu" başlığının rengini #a82400 yapıyoruz */
+            margin-bottom: 20px;
+        }
+        .reservation-form {
+            background-color: #1c1c1c;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+            display: inline-block;
+            text-align: left;
+        }
+        .reservation-form label {
+            font-size: 1em;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .reservation-form select,
+        .reservation-form input,
+        .reservation-form button {
+            width: 100%;
+            font-size: 1em;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #2c2c2c;
+            color: #ffffff;
+        }
+        .reservation-form button {
+            background-color:  #840404;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .reservation-form button:hover {
+            background-color: #b20810;
+        }
+        .info {
+            margin-top: 20px;
+            font-size: 1em;
+        }
+        .info img {
+            width: 100%;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shadow Cafe</h1>
+        <nav>
+            <a href="shadow48.html" style="color:#840404; text-decoration: none;">Ana Sayfa</a>
+            <a href="menü.html" style="color:#840404; text-decoration: none;">Menü</a>
+            <a href="hakkımızda.html" style="color:#840404; text-decoration: none;">Hakkımızda</a>
+            <a href="iletişim.html" style="color:#840404; text-decoration: none;">İletişim</a>
+			<a href="rezervasyon.html" style="color:#840404; text-decoration: none;">Rezervasyon</a>
+			<a href="etkinlik.html" style="color:#840404; text-decoration: none;">Etkinlik</a>
+			 <a href="onlinesipariş.html" style="color:#840404; text-decoration: none;" onmouseover="this.style.color='white'" onmouseout="this.style.color='#840404'">Online Sipariş</a>
+        </nav>
+    </header>
+
+    <div class="reservation-container">
+        <h2>Masa Rezervasyonu</h2>
+        <div class="reservation-form">
+            <form action="#" method="POST">
+                <label for="table-size">Masa Boyutu Seç</label>
+                <select id="table-size" name="table-size">
+                    <option value="2">2 Kişilik</option>
+                    <option value="4">4 Kişilik</option>
+                    <option value="6">6 Kişilik</option>
+                    <option value="8">8 Kişilik</option>
+                </select>
+
+                <label for="date">Bir Gün Seç</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Bir Zaman Seç</label>
+                <input type="time" id="time" name="time" required>
+
+                <button type="submit">Rezervasyon Yap</button>
+            </form>
+        </div>
+
+        <div class="info">
+            <h3>Çalışma Saatleri:</h3>
+            <p>Pazartesi-Cuma: 11:00 - 21:00</p>
+            <p>Cumartesi-Pazar: 10:00 - 23:00</p>
+        </div>
+    </div>
+</body>
+</html>
